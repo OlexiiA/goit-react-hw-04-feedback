@@ -6,11 +6,12 @@ import { FeedbackOptions } from "./FeedbackOptions";
 import { Wrapper } from "./Wrapper";
 
 export function App() {
+  
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
-  const options = [good, neutral, bad];
+  const options = ['good', 'neutral', 'bad'];
   const totalFeedback = (good + neutral + bad);
   const positiveFeedbackPercentage = Math.round(good / totalFeedback * 100);
 
